@@ -409,3 +409,83 @@ nav.scrolled .nav-item a:hover {
     color: #f69314;
     text-decoration: none;
 }
+
+.reviews-parent-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-body-container {
+    width: 80%;
+    padding-bottom: 100px;
+}
+
+.reviews-body-container h1 {
+    color: #f69314;
+    font-family: 'Playfair Display', Arial;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 35px;
+    padding-top: 100px;
+}
+
+.review-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Allows absolute positioning of arrows within */
+    max-width: 800px; /* Adjust based on layout needs */
+    margin: 0 auto;
+    overflow: visible; /* Ensure overflow is not hiding the arrows */
+}
+
+#content-container {
+    width: 670px;
+    margin: 0 auto;
+}
+
+.review-description {
+    justify-content: center;
+    color: #777;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+#author-info-container {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#author-info-container p {
+    padding-left: 25px;
+    color: #777;
+}
+
+.arrow {
+    font-size: 24px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: -20px;
+}
+
+.right-arrow {
+    right: -40px;
+}
