@@ -217,6 +217,7 @@ nav.scrolled .nav-item a:hover {
 .fourth-section-parent-container {
     padding-top: 80px;
     background-color: white;
+    padding-bottom: 100px;
 }
 
 .fourth-section-container {
@@ -275,4 +276,136 @@ nav.scrolled .nav-item a:hover {
     color: #777;
     font-size: 16px;
     padding-bottom: 20px;
+}
+
+.fifth-section-parent-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-top: 1px #9c9c9c solid;
+}
+
+.fifth-section-body-container {
+    display: flex;
+    width: 77%;
+    margin-top: 110px;
+}
+
+.two-body-containers {
+    padding-bottom: 130px;
+}
+
+.two-body-containers img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#first-container {
+    width: 59%;
+}
+
+#second-container {
+    width: 41%;
+}
+
+#second-header {
+    color: #f69314;
+    font-size: 35px;
+    font-family: 'Playfair Display', Arial;
+    padding-bottom: 20px;
+    width: 400px;
+}
+
+#second-container-description {
+    color: #777;
+    font-size: 20px;
+    width: 400px;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+
+#second-container-description-2 {
+    color: #999;
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 18px;
+}
+
+#second-container ul {
+    padding-left: 19px;
+    color: #777;
+    font-size: 16px;
+}
+
+.second-container-item {
+    padding-bottom: 16px;
+}
+
+#second-container button {
+    background: #f69314;
+    border: none;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.services-parent-container {
+    background-color: #f8f9fa;
+    border-bottom: 1px #777 solid;
+    display: flex;
+    justify-content: center;
+}
+
+.services-body-container {
+    width: 83%;
+    padding-bottom: 100px;
+}
+
+.services-body-container h1 {
+    color: #f69314;
+    text-align: center;
+    font-family: 'Playfair Display', Arial;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 45px;
+    padding-top: 80px;
+}
+
+.services-rows {
+    display: flex;
+}
+
+.services-item {
+    display: flex;
+    padding: 20px;
+}
+
+.services-item-column ion-icon {
+    padding-right: 25px;
+}
+
+.services-item-header {
+    color: #777;
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+
+.services-item-description {
+    color: #777;
+    line-height: 1.7;
+}
+
+.services-item-link-container {
+    padding-top: 20px;
+}
+
+.services-item-link {
+    color: #f69314;
+    text-decoration: none;
 }
