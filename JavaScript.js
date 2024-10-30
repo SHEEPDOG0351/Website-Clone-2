@@ -12,4 +12,15 @@
                 nav.classList.remove("scrolled");
             }
         });
+
+        function scrollLeft() {
+            const carousel = document.querySelector('.property-carousel');
+            carousel.scrollBy({ left: -300, behavior: 'smooth' });
+          }
+          
+          function scrollRight() {
+            const carousel = document.querySelector('.property-carousel');
+            carousel.scrollBy({ left: 300, behavior: 'smooth' });
+          }
     });
+      

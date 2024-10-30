@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -130,6 +131,140 @@ nav.scrolled .nav-item a:hover {
     padding-bottom: 10px;
 }
 
-.third-section-container {
+.third-section-parent-container {
     background-color: white;
+}
+
+.third-section-container {
+    margin: 0 auto;
+    width: 83%;
+}
+
+.third-section-container h1{
+    text-align: left;
+    color: #f69314;
+    font-size: 35px;
+    font-family: 'Playfair Display', Arial;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.properties-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .property-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    gap: 20px;
+  }
+  
+  .property-card {
+    min-width: 250px;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .property-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
+  .view-all {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+.fourth-section-parent-container {
+    padding-top: 80px;
+    background-color: white;
+}
+
+.fourth-section-container {
+    margin: 0 auto;
+    width: 83%;
+}
+
+.fourth-section-container h1 {
+    text-align: left;
+    color: #f69314;
+    font-size: 35px;
+    font-family: 'Playfair Display', Arial;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+#fourth-description-container {
+    color: #777;
+    font-size: 20px;
+    width: 600px;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+
+.realtor-parent-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.realtor-item {
+    background-color: #f0f0f0;
+    padding-left: 10px;
+    margin: 0px 10px 20px 0px;
+}
+
+.realtor-name {
+    font-family: 'Playfair Display', Arial;
+    font-weight: 200;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.realtor-description {
+    color: #777;
+    font-size: 20px;
+    padding-bottom: 15px;
 }
