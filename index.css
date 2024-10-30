@@ -22,6 +22,17 @@ nav {
     border-bottom: 1px grey solid;
     padding-bottom: 20px;
     padding-top: 15px;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: white;
+    color: black;
+}
+
+nav.scrolled .nav-item a:hover {
+    color: orange;
 }
 
 .nav-logo-container a {
