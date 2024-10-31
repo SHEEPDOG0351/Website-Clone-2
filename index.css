@@ -494,3 +494,143 @@ nav.scrolled .nav-item a:hover {
 .right-arrow {
     right: -40px;
 }
+
+.contact-parent-container {
+    background-color: #f8f9fa;
+}
+
+.contact-parent-container h1 {
+    text-align: center;
+    color: #f69314;
+    font-family: 'Playfair Display', Arial;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-body-container {
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background-color: white;
+    width: 57%;
+    margin-bottom: 100px;
+}
+
+.contact-form-text-container {
+    margin: 55px 50px 0px 50px;
+}
+
+.contact-form h3 {
+    font-family: 'Playfair Display', Arial;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 17px;
+    padding-bottom: 4px;
+}
+
+.form-input {
+    border: 1px #aaaaaa solid;
+    border-radius: 20px;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+}
+
+#message {
+    width: 100%;
+    padding-bottom: 120px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 1px #aaaaaa solid;
+    resize: none;
+    border-radius: 20px;
+}
+
+#form-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #f69314;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.contact-info {
+    background-color: white;
+    width: 33%;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.contact-text-container {
+    padding: 20px 20px 0px 20px;
+}
+
+#address-header {
+    color: #777;
+    font-weight: 600;
+    padding-bottom: 7px;
+    font-size: 16px;
+}
+
+#address {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.7;
+    padding-bottom: 30px;
+}
+
+#phone-number-header {
+    color: #777;
+    font-weight: 600;
+    padding-bottom: 7px;
+    font-size: 16px;
+}
+
+#phone-number {
+    padding-bottom: 30px;
+}
+
+#phone-number a {
+    text-decoration: none;
+    color: #f69314;
+    font-size: 15px;
+}
+
+#phone-number a:hover {
+    border-bottom: 2px #f69314 solid;
+}
+
+#email-address-header {
+    color: #777;
+    font-weight: 600;
+    padding-bottom: 7px;
+    font-size: 16px;
+}
+
+#email-address a {
+    text-decoration: none;
+    color: #f69314;
+    font-size: 15px;
+}
+
+#email-address a:hover {
+    border-bottom: 2px #f69314 solid;
+}
