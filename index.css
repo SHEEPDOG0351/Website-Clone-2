@@ -13,30 +13,26 @@ body {
     background: rgba(52, 58, 64, 0.9);
 }
 
-/* Base styles */
 nav {
     display: flex;
-    justify-content: space-between; /* Aligns children to left and right */
-    align-items: center; /* Vertically centers items */
-    margin: 0 auto;
+    align-items: center;
     width: 99%;
     height: 60px;
+    padding: 35px 0px;
     border-bottom: 1px solid grey;
-    padding-bottom: 20px;
-    padding-top: 15px;
     position: fixed;
     z-index: 1000;
     background-color: transparent;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    transition: color 0.3s;
 }
 
-/* Add scrolled class with background color and text color overrides */
 nav.scrolled {
-    background-color: white !important; /* Ensure white background when scrolled */
-    color: black;
+    background-color: white !important;
+    color: black !important;
 }
 
 .nav-logo-container a {
+    float: right;
     font-weight: 600;
     text-decoration: none;
     font-size: 30px;
@@ -44,41 +40,23 @@ nav.scrolled {
     padding-left: 180px;
 }
 
-/* Update nav item styles */
-.items-container {
-    display: flex;
-    padding-right: 200px;
-}
-
-.nav-items-list {
-    display: flex;
-}
-
-.nav-item {
-    padding: 15px;
-    list-style: none;
+nav.scrolled .nav-logo-container a {
+    color: black !important;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: grey; /* Initial color */
-    transition: color 0.3s; /* Smooth transition for color */
+    color: grey;
+    transition: color 0.3s;
 }
 
-/* Change hover color */
-.nav-item a:hover {
-    color: white;
-}
-
-/* Override colors when scrolled */
 nav.scrolled .nav-item a {
-    color: black !important; /* Ensure black color when scrolled */
+    color: black !important;
 }
 
 nav.scrolled .nav-item a:hover {
-    color: orange !important; /* Ensure orange hover color when scrolled */
+    color: orange !important;
 }
-
 
 .nav-logo-container a {
     font-weight: 600;
@@ -90,7 +68,7 @@ nav.scrolled .nav-item a:hover {
 
 .items-container {
     display: flex;
-    padding-right: 200px;
+    padding-left: 500px;
 }
 
 .nav-items-list {
