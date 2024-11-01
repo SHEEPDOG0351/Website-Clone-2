@@ -634,3 +634,160 @@ form label {
 #email-address a:hover {
     border-bottom: 2px #f69314 solid;
 }
+
+footer {
+    background-color: #333;
+    height: 80vh;
+}
+
+.footer-container {
+    padding: 100px 100px 0px 100px;
+    height: 350px;
+}
+
+.footer-text-container {
+    padding: 0px 10px 70px 80px;
+    display: flex;
+}
+
+.footer-text-content {
+    width: fit-content;
+}
+
+.footer-headers {
+    color: white;
+    font-family: 'Playfair Display', Arial;
+    font-size: 17px;
+}
+
+#first {
+    padding-right: 250px;
+}
+
+#about-stated {
+    padding-bottom: 15px;
+}
+
+#footer-lorem {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.7;
+}
+
+#second {
+    padding-right: 130px;
+}
+
+.footer-text-content ul {
+    list-style-type: none;
+}
+
+#quick {
+    padding-bottom: 15px;
+}
+
+.footer-list-item {
+    color: #777;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+#subscribe {
+    padding-bottom: 10px;
+}
+
+.footer-input-container {
+    display: flex; /* Aligns input and button horizontally */
+    align-items: center; /* Centers button and input vertically */
+    max-width: 400px; /* Set a max width if needed */
+}
+
+.footer-input-container input {
+    border-radius: 30px 0 0 30px; /* Rounded left corners */
+    height: 43px; /* Same height as button */
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    padding: 10px 15px; /* Left padding */
+    color: #fff;
+    font-size: 16px;
+    flex-grow: 1; /* Takes up remaining space */
+    box-sizing: border-box;
+}
+
+.footer-button {
+    border-top-right-radius: 30px; /* Rounded right corners */
+    border-bottom-right-radius: 30px;
+    background: #f69314;
+    font-size: 16px;
+    color: #000;
+    padding: 10px 30px; /* Same height and padding as input */
+    height: 43px; /* Matches input height */
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+}
+
+.footer-button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+#follow-us {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.footer-ionicons {
+    padding-right: 30px;
+    color: #777;
+}
+
+#facebook:hover {
+    color: #1877F2;
+}
+
+#twitter:hover {
+    color: #1DA1F2;
+}
+
+#instagram:hover {
+    color: #E1306C;
+}
+
+#linkedin:hover {
+    color: #0A66C2;
+}
+
+.footer-divider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-divider {
+    width: 80%;
+    height: 1.5px;
+    background-color: #555;
+    margin: 30px 0;
+}
+
+#copyright {
+    padding-top: 30px;
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #777;
+}
+
+#copyright a:hover {
+    color: white;
+    transition: 0.3s;
+}
