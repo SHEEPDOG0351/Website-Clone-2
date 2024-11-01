@@ -58,30 +58,48 @@
 
     <div class="third-section-parent-container">
         <div class="third-section-container">
-            <h1>Properties</h1>
-            <div class="carousel-container">
-                <button class="scroll-btn prev-btn" onclick="scrollLeft()">Previous</button>
-            
-                <div class="property-carousel">
-                  <!-- Repeating property card -->
-                  <div class="property-card">
-                    <img src="property1.jpg" alt="Property Image">
-                    <h3>$3,400,000</h3>
-                    <p>6 beds | 4 baths | 4,250 sqft</p>
-                    <p>480 12th, Unit 14, San Francisco, CA</p>
-                  </div>
-                  <div class="property-card">
-                    <img src="property1.jpg" alt="Property Image">
-                    <h3>$3,400,000</h3>
-                    <p>6 beds | 4 baths | 4,250 sqft</p>
-                    <p>480 12th, Unit 14, San Francisco, CA</p>
-                  </div>
-                  <!-- Repeat as needed or dynamically populate with JavaScript -->
+            <div class="third-header-container">
+                <h1>Properties</h1>
+                <div class="nav-links">
+                    <button onclick="scrollProperties(-1)" id="previous">PREVIOUS</button>
+                    <p> / </p>
+                    <button onclick="scrollProperties(1)" id="next" class="">NEXT</button>
                 </div>
-            
-                <button class="scroll-btn next-btn" onclick="scrollRight()">Next</button>
-              </div>
-                <button class="view-all">View All Property Listings</button>
+            </div>
+            <div class="property-card-container">
+                <div class="property-card">
+                    <img src="" alt="Property 1">
+                    <div class="property-text">
+                        <p class="property-card-cost">3,400,000</p>
+                        <span id="first-cost">6 beds</span><span>4 baths</span><span>4,250 spft.</span>
+                        <p class="property-card-address">480 12th, Unit 14, San Francisco, CA</p>
+                    </div>
+                    
+                </div>
+                <div class="property-card">
+                    <img src="" alt="Property 1">
+                    <div class="property-text">
+                        <p class="property-card-cost">3,400,000</p>
+                        <span id="first-cost">6 beds</span><span>4 baths</span><span>4,250 spft.</span>
+                        <p class="property-card-address">480 12th, Unit 14, San Francisco, CA</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="" alt="Property 1">
+                    <div class="property-text">
+                        <p class="property-card-cost">3,400,000</p>
+                        <span id="first-cost">6 beds</span><span>4 baths</span><span>4,250 spft.</span>
+                        <p class="property-card-address">480 12th, Unit 14, San Francisco, CA</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="" alt="Property 1">
+                    <div class="property-text">
+                        <p class="property-card-cost">3,400,000</p>
+                        <span id="first-cost">6 beds</span><span>4 baths</span><span>4,250 spft.</span>
+                        <p class="property-card-address">480 12th, Unit 14, San Francisco, CA</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

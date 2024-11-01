@@ -13,6 +13,7 @@ body {
     background: rgba(52, 58, 64, 0.9);
 }
 
+/* Base styles */
 nav {
     display: flex;
     justify-content: space-between; /* Aligns children to left and right */
@@ -20,21 +21,64 @@ nav {
     margin: 0 auto;
     width: 99%;
     height: 60px;
-    border-bottom: 1px grey solid;
+    border-bottom: 1px solid grey;
     padding-bottom: 20px;
     padding-top: 15px;
     position: fixed;
     z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
+/* Add scrolled class with background color and text color overrides */
 nav.scrolled {
-    background-color: white;
+    background-color: white !important; /* Ensure white background when scrolled */
     color: black;
 }
 
-nav.scrolled .nav-item a:hover {
-    color: orange;
+.nav-logo-container a {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    padding-left: 180px;
 }
+
+/* Update nav item styles */
+.items-container {
+    display: flex;
+    padding-right: 200px;
+}
+
+.nav-items-list {
+    display: flex;
+}
+
+.nav-item {
+    padding: 15px;
+    list-style: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: grey; /* Initial color */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* Change hover color */
+.nav-item a:hover {
+    color: white;
+}
+
+/* Override colors when scrolled */
+nav.scrolled .nav-item a {
+    color: black !important; /* Ensure black color when scrolled */
+}
+
+nav.scrolled .nav-item a:hover {
+    color: orange !important; /* Ensure orange hover color when scrolled */
+}
+
 
 .nav-logo-container a {
     font-weight: 600;
@@ -70,7 +114,7 @@ nav.scrolled .nav-item a:hover {
 }
 
 .first-section-container {
-    height: 88vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,79 +184,83 @@ nav.scrolled .nav-item a:hover {
     width: 83%;
 }
 
-.third-section-container h1{
+.third-header-container {
+    display: flex;
+}
+
+.third-header-container h1{
     text-align: left;
     color: #f69314;
     font-size: 35px;
     font-family: 'Playfair Display', Arial;
     padding-bottom: 30px;
     padding-top: 40px;
+    padding-left: 80px;
 }
 
-.properties-section {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .carousel-container {
-    position: relative;
-    overflow: hidden;
+.nav-links {
+    margin-left: auto; /* Pushes the nav-links container to the right */
     display: flex;
-    align-items: center;
-  }
-  
-  .property-carousel {
+}
+
+.nav-links button {
+    height: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-size: 17px;
+    padding-top: 65px;
+    cursor: pointer;
+
+}
+
+.nav-links p {
+    margin: 65px 10px 0px 10px;
+    color: #777;
+    font-size: 16px;
+}
+
+.property-card-container {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 10px;
-    gap: 20px;
-  }
-  
-  .property-card {
-    min-width: 250px;
-    max-width: 300px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .property-card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: orange;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 0;
-  }
-  
-  .next-btn {
-    right: 0;
-  }
-  
-  .view-all {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: orange;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+    justify-content: center;
+}
+
+.property-card {
+    padding: 30px;
+}
+
+.property-card img{
+    padding-bottom: 20px;
+}
+
+.property-text {
+    padding-left: 17px;
+}
+
+.property-card-cost {
+    color: #343a40;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+span {
+    font-size: 13px;
+    color: #777;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px #777 solid;
+}
+
+#first-cost {
+    padding-left: 0px !important;
+}
+
+.property-card-address {
+    padding-top: 10px;
+    font-size: 13px;
+    color: #777;
+}
 
 .fourth-section-parent-container {
     padding-top: 80px;
